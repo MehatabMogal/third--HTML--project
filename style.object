@@ -1,0 +1,57 @@
+/* General page styling */
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #87ceeb, #f0f0f0);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Game area */
+#gameArea {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Basket styling */
+#basket {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 50px;
+  background: #8b4513;
+  border-radius: 0 0 50% 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Fruit objects (emoji styled) */
+.object {
+  position: absolute;
+  font-size: 32px;   /* size of fruit emoji */
+  line-height: 1;
+  animation: spin 1s linear infinite;
+}
+
+/* Score display */
+#score {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  background: rgba(255,255,255,0.7);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Fun animation for fruits */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
